@@ -1,0 +1,45 @@
+% -*- root: ../main.tex -*-
+\chapter{Mathematical optimization}
+\label{chap:optimization}
+
+
+\section{Guess \& check}
+
+
+\section{Hill climbing}
+
+Let’s think how we could guide our search so that it does not check as
+much of bad solutions. What kind of information we could use? Again we
+ask a reader to think on his own about all of the questions that will be
+asked going forward.
+
+One method which could help us is better choice of a points to be checked.
+If the space is continuous we can use our knowledge of points lying nearby
+to approximate the value of point in question. We could think of this
+problem as climbing a hill in the fog. We look for the steepest direction
+which we can see and move in this direction.The Hill climbing algorithm keeps track of one currently best solution,
+checks the points nearby and moves in the direction of the biggest
+improvement, as long as any improvement can be made.
+
+In n dimensions one should check 2*n directions in orthogonal way
+(which means at right angle but for every number of dimensions)
+backward and forward the number line by some vector (some displacement
+in space), before changing current best point. This problem seems very
+obvious, as number of dimension grows also the number of possibilities
+we must check grows enormously. Also we don’t necessarily move in a
+best directions since it can be that the best directions lies in between the
+directions we checked. Finally we do not use any of so called gradient
+information.
+
+
+\section{Gradient descent}
+
+
+\section{ Gradient descent + step size}
+
+
+
+\section{ Gradient descent + momentum}
+
+
+\section{Stochastic gradient descent}
