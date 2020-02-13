@@ -14,9 +14,23 @@
 
 \section{Goals}
 
+The goal is intuitively described as a want, wish or something we move towards. We will call the being with some goal, with accordance with RL literature, \textbf{the agent}. Now to move forward we will need to formalize some notions. In this formalization the goal will mean some numerical value which we can access in some number of points in time. We can think of this process of access as of sensing. Agents can sense their situation and goals. We will also say that we wish to get maximal possible value of this goal variable. It is the same notion as in the mathematical maximization, so:
 
+\begin{equation}
+	g = max(v)
+\end{equation}
+
+where $\boldsymbol{g}$ is the goal and $\boldsymbol{v}$ is a variable. We call $g$ the value function. We could say for example that, goal of a being is:
+
+\begin{equation}
+	g = max(e + \zeta c)
+\end{equation}
+
+
+Where $\boldsymbol{e}$ is value associated with existing, $\boldsymbol{c}$ is reproduction rate and $\boldsymbol{\zeta}$ is a some constant. It is the exchange rate between $e$ and $c$.
 
 \section{And how to accomplish them}
 
+Now we come to what we will call the central purpose of the AI discipline. That is achieving goals in the sense that we defined, so creating agents that maximize some predefined value. This is very general and powerful definition, because one could imagine defining every problem one faces in his day to day life as this kind of goal. In some deep sense AI is a study which aims at solving all existing problems. But as many solutions that seem easy at the first glance there hides immense complexity in doings of those systems. We will see that formalizing some notions may be very tricky in practice, and AI is in its core the engineering discipline.
 
 
